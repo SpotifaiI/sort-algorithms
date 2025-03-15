@@ -21,7 +21,7 @@ bundle install
 
 ### 2. Inicie os serviços com Docker Compose
 
-No diretório raiz do projeto (`sorting_project/`), execute:
+No diretório raiz do projeto, execute:
 
 ```bash
 docker-compose up --build
