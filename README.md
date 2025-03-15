@@ -44,16 +44,21 @@ docker-compose up --build
 ### 5. Abra o Jaeger
 
 - Abra um navegador e acesse:
+
   ```
   http://localhost:16686
   ```
+
 - Na interface do Jaeger:
+
   1. No campo **Service**, selecione `sooortinnng`.
   2. Clique em **Find Traces**.
   3. Você verá os traces com spans para cada algoritmo (ex.: `sort_BubbleSort`, `sort_QuickSort`), incluindo:
      - Tempo de execução (`execution_time_ms`).
      - Tamanho do array (`array_size`).
      - Resultado ordenado (`sorted`).
+
+  ![<jaeger>](public/jaeger.png)
 
 ### 6. Pare os serviços
 
