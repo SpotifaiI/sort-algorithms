@@ -1,11 +1,13 @@
 require_relative 'sorter'
-require_relative 'strategies/bubble_sort'
-require_relative 'strategies/bubble_sort_enhanced'
-require_relative 'strategies/selection_sort'
-require_relative 'strategies/insertion_sort'
-require_relative 'strategies/counting_sort'
 require_relative 'file_handler'
 require_relative 'sorting_processor'
+require_relative 'strategies/bubble_sort'
+require_relative 'strategies/bubble_sort_enhanced'
+require_relative 'strategies/insertion_sort'
+require_relative 'strategies/selection_sort'
+require_relative 'strategies/merge_sort'
+require_relative 'strategies/counting_sort'
+require_relative 'strategies/radix_sort'
 
 class SortingApp
   def initialize
@@ -15,7 +17,9 @@ class SortingApp
       BubbleSortEnhanced.new,
       InsertionSort.new,
       SelectionSort.new,
-      CountingSort.new
+      MergeSort.new,
+      CountingSort.new,
+      RadixSort.new
     ]
   end
 
