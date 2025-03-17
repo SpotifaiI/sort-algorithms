@@ -8,6 +8,8 @@ require_relative 'strategies/selection_sort'
 require_relative 'strategies/merge_sort'
 require_relative 'strategies/counting_sort'
 require_relative 'strategies/radix_sort'
+require_relative 'strategies/quick_sort'
+require_relative 'strategies/heap_sort'
 
 class SortingApp
   def initialize
@@ -19,7 +21,9 @@ class SortingApp
       SelectionSort.new,
       MergeSort.new,
       CountingSort.new,
-      RadixSort.new
+      RadixSort.new,
+      QuickSort.new,
+      HeapSort.new,
     ]
   end
 
