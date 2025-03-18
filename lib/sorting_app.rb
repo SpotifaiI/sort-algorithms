@@ -24,7 +24,8 @@ class SortingApp
       RadixSort.new,
       QuickSort.new,
       HeapSort.new,
-      TimSort.new
+      TimSort.new,
+      ShellSort.new
     ]
   end
 
