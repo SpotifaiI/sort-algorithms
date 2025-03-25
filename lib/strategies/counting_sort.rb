@@ -3,7 +3,7 @@ require_relative '../sorting_strategy'
 class CountingSort
   include SortingStrategy
 
-  def sort(array)
+  def sort(array, sorter)
     return array if array.empty?
 
     max_value = array.max
@@ -21,6 +21,7 @@ class CountingSort
     (array.length - 1).downto(0) do |i|
       adjusted_value = array[i] - min_value
       output_array[count_hash[adjusted_value] - 1] = array[i]
+      sorter.increment_swaps
       count_hash[adjusted_value] -= 1
     end
 

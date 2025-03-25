@@ -31,8 +31,8 @@ class SortingApp
     ]
   end
 
-  def run
+  def run(mode: :sequential)
     processor = SortingProcessor.new(@file_handler, @algorithms)
-    processor.process_all_files
+    processor.process_all_files(mode: mode)
   end
 end
