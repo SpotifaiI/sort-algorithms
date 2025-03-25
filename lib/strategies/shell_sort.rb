@@ -3,7 +3,7 @@ require_relative '../sorting_strategy'
 class ShellSort
   include SortingStrategy
 
-  def sort(array)
+  def sort(array, sorter)
     return array if array.length <= 1
 
     result = array.dup
@@ -15,12 +15,14 @@ class ShellSort
     end
 
     while gap > 0
-      for i in gap...n
+      (gap...n).each do |i|
         temp = result[i]
-
         j = i
+
         while j >= gap && result[j - gap] > temp
+          sorter.increment_comparisons
           result[j] = result[j - gap]
+          sorter.increment_swaps
           j -= gap
         end
 
