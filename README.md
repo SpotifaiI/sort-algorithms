@@ -1,6 +1,16 @@
 # Sort Algorithms
 
+## Alunos:
+
+- Cristian Prochnow
+- Gustavo Henrique Dias
+- Lucas Serpa
+- Marlon de Souza
+- Ryan Gabriel Bromati
+
 Este projeto implementa vários algoritmos de ordenação famosos (Bubble Sort, Bubble Sort Improved, Quick Sort e Merge Sort) utilizando o padrão de projeto **Strategy** em Ruby. A execução dos algoritmos é rastreada com **OpenTelemetry**, e os logs/traces são visualizados usando o **Jaeger**, uma ferramenta open-source de rastreamento.
+
+Foi incluído paralelização com threads. Como o Ruby não tem uma biblioteca nativa multiprocessing como o Python, usaremos Thread para threads e a gem parallel (que usa fork internamente) para simular processos.
 
 ## Pré-requisitos
 
