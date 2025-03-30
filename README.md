@@ -12,6 +12,11 @@ Este projeto implementa vários algoritmos de ordenação famosos (Bubble Sort, 
 
 Foi incluído paralelização com threads. Como o Ruby não tem uma biblioteca nativa multiprocessing como o Python, usaremos Thread para threads e a gem parallel (que usa fork internamente) para simular processos.
 
+Threads: Usa Thread para executar tarefas (algoritmos ou arquivos) simultaneamente no mesmo processo.
+Processes: Usa a gem Parallel para rodar tarefas em processos separados, aproveitando múltiplos núcleos da CPU. Ideal para ordenações pesadas.
+Sequential: Executa tudo em sequência, sem paralelismo, usando uma única thread e processo. Ideal para depuração ou referência de desempenho base.
+Impacto: Acelera o processamento de arquivos e algoritmos, com métricas (tempo, comparações, trocas) rastreadas via OpenTelemetry.
+
 ## Pré-requisitos
 
 - **Docker**: Necessário para rodar a aplicação e o Jaeger em contêineres.
