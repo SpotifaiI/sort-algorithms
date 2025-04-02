@@ -2,6 +2,14 @@
 
 Este projeto implementa vários algoritmos de ordenação famosos (Bubble Sort, Bubble Sort Improved, Quick Sort e Merge Sort) utilizando o padrão de projeto **Strategy** em Ruby. A execução dos algoritmos é rastreada com **OpenTelemetry**, e os logs/traces são visualizados usando o **Jaeger**, uma ferramenta open-source de rastreamento.
 
+## Alunos:
+
+- Cristian Prochnow
+- Gustavo Henrique Dias
+- Lucas Serpa
+- Marlon de Souza
+- Ryan Gabriel Bromati
+
 ## Pré-requisitos
 
 - **Docker**: Necessário para rodar a aplicação e o Jaeger em contêineres.
